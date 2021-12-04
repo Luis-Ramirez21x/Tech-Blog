@@ -1,0 +1,12 @@
+[
+    {
+        "title" : "Why MVC is important",
+        "description" : "the boootcmap said it was importnt ",
+        "user_id" : "1"
+    },
+    {
+        "title" : "CODING IS COOL",
+        "description" : "coding is in style and is probably going to get you coolpoints",
+        "user_id" : "3"
+    }
+]

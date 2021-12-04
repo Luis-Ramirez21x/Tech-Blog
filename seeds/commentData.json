@@ -1,0 +1,12 @@
+[
+    {
+        "content": "randomm comment you will never see again",
+        "user_id": 1,
+        "blog_id" : 1
+    },
+    {
+        "content": "i like to catch fireflys",
+        "user_id": 1,
+        "blog_id" : 2
+    }
+]
