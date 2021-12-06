@@ -1,4 +1,5 @@
 console.log('test-connection');
+/*
 const createCommentFormHandler = async (event) =>{
     event.preventDefault()
     console.log('testing-function');
@@ -23,5 +24,5 @@ const createCommentFormHandler = async (event) =>{
         }
       }
 };
-
+*/
 document.querySelector('.blog-form').addEventListener('submit', createCommentFormHandler);
