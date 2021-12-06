@@ -26,8 +26,8 @@
         </div>
       </nav>
 
-      <!--Body cards-->
-      <div class="row justify-content-md-center">
+    <!--Body cards-->
+    <div class="row justify-content-md-center">
       <div class="card col-md-8">
         <div class="card-header"style="
         display: flex;
@@ -47,7 +47,91 @@
       </div>
     </div>
 
+    <!--Login Form-->
+    <div class="row justify-content-md-center">
+      <div class="card col-md-8">
+      <div class="col-md-6">
+        <h2>Login</h2>
     
+        <form class="form login-form">
+          <div class="form-group">
+            <label for="email-login">email:</label>
+            <input class="form-input" type="text" id="email-login" />
+          </div>
+          <div class="form-group">
+            <label for="password-login">password:</label>
+            <input class="form-input" type="password" id="password-login" />
+          </div>
+          <div class="form-group">
+            <button class="btn btn-primary" type="submit">login</button>
+          </div>
+        </form>
+      </div>
+      <div class="col-md-6">
+        <h2>Signup</h2>
+    
+        <form class="form signup-form">
+          <div class="form-group">
+            <label for="name-signup">name:</label>
+            <input class="form-input" type="text" id="name-signup" />
+          </div>
+          <div class="form-group">
+            <label for="email-signup">email:</label>
+            <input class="form-input" type="text" id="email-signup" />
+          </div>
+          <div class="form-group">
+            <label for="password-signup">password:</label>
+            <input class="form-input" type="password" id="password-signup" />
+          </div>
+          <div class="form-group">
+            <button class="btn btn-primary" type="submit">signup</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+    
+    <script src="./js/login.js"></script>
+
+   <!--Blog Form--> 
+   <div class="row justify-content-md-center">
+    <div class="card col-md-8">
+    <form>
+      <div class="form-group">
+        <label for="title-blog">Blog Title</label>
+        <input type="email" class="form-control" id="title-blog" aria-describedby="emailHelp" placeholder="Title your Blog Post!">
+        
+      </div>
+      <div class="form-group">
+        <label for="description-blog">Description</label>
+        <input type="password" class="form-control" id="description-blog" placeholder="What do you want to say?">
+      </div>
+      <button type="submit" class="btn btn-primary" id="blog-submit">Post</button>
+    </form>
+    </div>
+    </div>
+
+    <!--New post button-->
+    <div class="row justify-content-md-center">
+      <div class="card col-md-1">
+      <a class="btn btn-primary" href="/newBlog" role="button">New Post</a>
+      </div>
+      </div>
+
+  <!--Comment form-->
+  <div class="row justify-content-md-center">
+    <div class="card col-md-8">
+    <form class ="comment-form">
+
+      <div class="form-group">
+        <label for="comment">Comment</label>
+        <input type="text" class="form-control" id="comment" placeholder="Comment here...">
+      </div>
+      <button type="submit" class="btn btn-primary" id="comment-submit">Post</button>
+    </form>
+    </div>
+    </div>
+
 
 </body>
 </html>

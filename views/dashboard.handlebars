@@ -1,5 +1,6 @@
+
+<h1>My Posts</h1>
 {{#each blogs as |blog|}}
-<a href="/blog/{{id}}">{{id}}
 <div class="row justify-content-md-center">
       <div class="card col-md-8">
         <div class="card-header"style="
@@ -19,5 +20,10 @@
         </div>
       </div>
     </div>
-</a>
-{{/each}}    
+{{/each}}  
+
+<div class="row justify-content-md-center">
+<div class="card col-md-1">
+<a class="btn btn-primary" href="/newBlog" role="button">New Post</a>
+</div>
+</div>
