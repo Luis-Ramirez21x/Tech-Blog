@@ -9,7 +9,10 @@ router.get('/', /*withAuth,*/ async (req, res) => {
 
       const blogs = blogData.map ((blog) => blog.get( {plain:true} ));
 
-      res.render('homepage', {blogs});
+      res.render('homepage', {
+        blogs,
+        logged_in: req.session.logged_in
+      });
      
     } catch (err) {
       res.status(500).json(err);
@@ -39,7 +42,7 @@ router.get('/newBlog', (req,res) => {
 }});
 
 //comment on a blog view
-router.get('/blog/:id', async (req,res) => {
+router.get('/dashboard/:id', async (req,res) => {
   try{
     //creating a blog_id from params
     req.session.reload(() => {
@@ -60,9 +63,9 @@ router.get('/blog/:id', async (req,res) => {
        
     });
     const comments = commentData.map((comment) => comment.get({ plain:true }));
-    console.log(comments);
+    
 
-    res.render('commentOnBlog', { blog, comments });
+    res.render('blog', {blog, comments});
 
   } catch (err) {
       res.status(500).json(err);

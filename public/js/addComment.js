@@ -1,8 +1,8 @@
-console.log('test-connection');
-/*
+
+
 const createCommentFormHandler = async (event) =>{
     event.preventDefault()
-    console.log('testing-function');
+    
     //get values from form 
     const content = document.querySelector('#comment').value.trim();
     
@@ -24,5 +24,5 @@ const createCommentFormHandler = async (event) =>{
         }
       }
 };
-*/
-document.querySelector('.blog-form').addEventListener('submit', createCommentFormHandler);
+
+document.querySelector('.comment-form').addEventListener('submit', createCommentFormHandler);
