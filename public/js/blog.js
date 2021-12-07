@@ -1,6 +1,6 @@
 const createBlogFormHandler = async (event) =>{
     event.preventDefault()
-
+ 
     //get values from form 
     const title = document.querySelector('#title-blog').value.trim();
     const description = document.querySelector('#description-blog').value.trim();
@@ -24,5 +24,5 @@ const createBlogFormHandler = async (event) =>{
 };
 
 document
-  .querySelector('.comment-form')
+  .querySelector('.blog-form')
   .addEventListener('submit', createBlogFormHandler);

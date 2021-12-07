@@ -26,7 +26,10 @@ router.get('/dashboard', /*withAuth,*/ async (req, res) => {
 
     const blogs = blogData.map ((blog) => blog.get( {plain:true} ));
 
-    res.render('dashboard', {blogs});
+    res.render('dashboard', {
+      blogs,
+      logged_in: req.session.logged_in
+    });
    
   } catch (err) {
     res.status(500).json(err);
@@ -36,7 +39,7 @@ router.get('/dashboard', /*withAuth,*/ async (req, res) => {
 //create a new blog form view
 router.get('/newBlog', (req,res) => {
   try{
-    res.render('createBlog');
+    res.render('createBlog', {logged_in: req.session.logged_in});
   } catch (err) {
     res.status(500).json(err);
 }});
@@ -65,11 +68,32 @@ router.get('/dashboard/:id', async (req,res) => {
     const comments = commentData.map((comment) => comment.get({ plain:true }));
     
 
-    res.render('blog', {blog, comments});
+    res.render('blog', {
+      blog,
+      comments,
+      logged_in: req.session.logged_in
+    });
 
   } catch (err) {
       res.status(500).json(err);
     }
+})
+
+//edit a blog post the logged in user made 
+router.get('/edit/:id', async (req,res) => {
+  try{
+    
+    req.session.reload(() => {
+      req.session.blog_id = req.params.id;
+      });
+
+    const blogData = await Blog.findByPk(req.params.id);
+    const blog = blogData.get({ plain: true });
+
+
+  } catch (err) {
+    res.status(500).json(err);
+  }
 })
 
   router.get('/login', (req, res) => {

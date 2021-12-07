@@ -52,5 +52,27 @@ router.delete('/:id',  async (req, res) => {
     }
   });
 
+//updates a blog post
+router.put("/", async (req, res) => {
+  try {
+    const updateBlog = await Blog.update(
+      {
+        title: req.body.title,
+        description: req.body.description,
+        date_created: req.body.date,
+      },
+      {
+        where: {
+          id: req.body.id,
+        },
+      }
+    );
+    res.redirect("/dashboard");
+    res.status(200).status(updateBlog);
+  } catch (err) {
+    res.status(500).json(err);
+  }
+});
+
 
 module.exports = router;

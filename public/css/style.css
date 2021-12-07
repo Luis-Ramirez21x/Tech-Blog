@@ -1,0 +1,17 @@
+a{
+    text-decoration: none;
+    color:black;
+}
+
+.card{
+    margin:4px;
+    padding:0px;
+}
+
+.new-post-button{
+    background-color: #0d6efd;
+}
+
+.comments{
+    margin:4px;
+}

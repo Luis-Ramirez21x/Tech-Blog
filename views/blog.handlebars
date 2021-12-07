@@ -1,12 +1,13 @@
 
-<div>
+
 <div class="row justify-content-md-center">
-    <div class="card col-md-8">
+    <div class="card col-md-8" style="padding:0px;">
         <div class="card-header"style="
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-between;
+        
     ">
           <h4>{{blog.title}}</h4>
           <h6>{{blog.date_created}}</h6>
@@ -24,7 +25,7 @@
 
 {{#each comments as |comment|}}
 <div class="row justify-content-md-center">
-      <div class="card col-md-8">
+      <div class="card col-md-8" style="margin:4px; padding:0px">
         <div class="card-header"style="
         display: flex;
         flex-direction: row;
@@ -54,5 +55,5 @@
     </form>
     </div>
     </div>
-</div>
+
 <script src="../js/addComment.js"></script>
