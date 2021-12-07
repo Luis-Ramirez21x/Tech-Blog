@@ -31,11 +31,11 @@ router.post('/', async (req, res) => {
   });
 
   //delete a blog post 
-router.delete('/:id',  async (req, res) => {
+router.delete('/',  async (req, res) => {
     try {
       const blogData = await Blog.destroy({
         where: {
-          id: req.params.id,
+          id: req.session.blog_id,
           //user_id: req.session.user_id,
         },
       });
@@ -63,12 +63,12 @@ router.put("/", async (req, res) => {
       },
       {
         where: {
-          id: req.body.id,
+          id: req.session.blog_id,
         },
       }
     );
-    res.redirect("/dashboard");
-    res.status(200).status(updateBlog);
+    //res.redirect("/dashboard");
+    res.status(200).json(updateBlog);
   } catch (err) {
     res.status(500).json(err);
   }
