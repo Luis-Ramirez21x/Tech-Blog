@@ -7,10 +7,12 @@
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-between;
+        border: 1px solid lightcoral;
+        background-color: lightcoral;
         
     ">
           <h4>{{blog.title}}</h4>
-          <h6>{{blog.date_created}}</h6>
+          <h6>{{format_date blog.date_created}}</h6>
         </div>
         
         <div class="card-body">

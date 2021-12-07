@@ -6,6 +6,7 @@ a{
 .card{
     margin:4px;
     padding:0px;
+    border: 1px solid lightcoral;
 }
 
 .new-post-button{
@@ -14,4 +15,21 @@ a{
 
 .comments{
     margin:4px;
+}
+
+h1{
+    text-align: center;
+}
+
+.card-header{
+    background-color: lightcoral;
+}
+
+.navbar{
+    background-color: lightgrey;
+}
+
+nav{
+    padding:0px;
+    background-color: lightgrey;
 }
