@@ -28,6 +28,8 @@
 
 ### Heroku and GITHUB links
  https://github.com/Luis-Ramirez21x/Tech-Blog
+ 
  https://luis-ramirez21x.github.io/Tech-Blog/
+ 
  https://stormy-earth-38920.herokuapp.com/
 
