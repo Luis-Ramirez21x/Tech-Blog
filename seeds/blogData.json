@@ -1,12 +1,17 @@
 [
     {
         "title" : "Why MVC is important",
-        "description" : "the boootcmap said it was importnt ",
+        "description" : "Being able to properly strcuture your porject can allow for ease of... ",
         "user_id" : "1"
     },
     {
         "title" : "CODING IS COOL",
-        "description" : "coding is in style and is probably going to get you coolpoints",
+        "description" : "coding is in style and is probably going to get you coolpoints. If you aren't coding right now then what are you even doing....",
+        "user_id" : "3"
+    },
+    {
+        "title" : "Why JavaScript is going to be outdated in 1 year",
+        "description" : "It won't.",
         "user_id" : "3"
     }
 ]

@@ -20,7 +20,7 @@ router.get('/', /*withAuth,*/ async (req, res) => {
   });
 
 //dashboard route
-router.get('/dashboard', /*withAuth,*/ async (req, res) => {
+router.get('/dashboard', withAuth, async (req, res) => {
   try {
     const blogData = await Blog.findAll({ where: {user_id : req.session.user_id} });
 
@@ -45,7 +45,7 @@ router.get('/newBlog', (req,res) => {
 }});
 
 //comment on a blog view
-router.get('/dashboard/:id', async (req,res) => {
+router.get('/dashboard/:id',withAuth, async (req,res) => {
   try{
     //creating a blog_id from params
     req.session.reload(() => {
