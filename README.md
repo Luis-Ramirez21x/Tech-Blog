@@ -3,8 +3,8 @@
 
 ## Instructions
 -Npm Install 
--Node seeds/seed.js
--npm start
+>Node seeds/seed.js
+>npm start
 
 ## Screen Shots
 
