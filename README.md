@@ -9,14 +9,25 @@
 ## Screen Shots
 
 ### Main
-![main](https://user-images.githubusercontent.com/86748117/144962430-20cf7816-a428-4778-b59e-4c2a16affa88.PNG)
+![main](https://user-images.githubusercontent.com/86748117/145115580-e0bc3286-4949-43d9-9a40-39c1ddc9da74.PNG)
+
 
 ### Dashboard
-![dashboard](https://user-images.githubusercontent.com/86748117/144962458-ccaffe5e-887b-403a-8103-dbf0add6a899.PNG)
+![dashboard](https://user-images.githubusercontent.com/86748117/145115586-62cb46c7-8e91-4797-b770-16852d92f863.PNG)
+
 
 ### Comment
-![comment](https://user-images.githubusercontent.com/86748117/144962476-e00f22dd-1736-4802-9ebe-f6e6a7fd7151.PNG)
+![comment](https://user-images.githubusercontent.com/86748117/145115594-bfa033c5-4dc5-4b60-90c3-e6fbc2be9a78.PNG)
+
 
 ### New Blog
-![new blog](https://user-images.githubusercontent.com/86748117/144962512-b01bc887-ed58-4f9a-83dc-204912eb4e2f.PNG)
+![new blog](https://user-images.githubusercontent.com/86748117/145115590-8fcc17f8-a80a-4951-997b-2316718cd47c.PNG)
+
+### Edit Blog
+![edit](https://user-images.githubusercontent.com/86748117/145115659-cdf442d9-3b0e-4963-b543-6e5e63679d92.PNG)
+
+### Heroku and GITHUB links
+ https://github.com/Luis-Ramirez21x/Tech-Blog
+ https://luis-ramirez21x.github.io/Tech-Blog/
+ https://stormy-earth-38920.herokuapp.com/
 
